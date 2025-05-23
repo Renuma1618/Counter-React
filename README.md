@@ -31,6 +31,7 @@ It increases total.current by 1, so the line Rendering times - {total.current} a
 
 
 **simple step-by-step explanation **
+
 STEP 1: Create a new React project using a tool like Vite or Create React App.
 
 STEP 2: Create a file with a .jsx extension to write your component.
