@@ -1,12 +1,40 @@
-# React + Vite
+**📊 React Render Counter**
+This is a simple React project that demonstrates how component rendering works using the useState and useRef hooks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**🔍 About the Project**
+This app is built to help beginners understand:
 
-Currently, two official plugins are available:
+How state (useState) updates in React
+How to persist values across renders using useRef
+How to track the number of times a component renders
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🛠️ Tech Stack**
+React (Functional Components)
+JavaScript (ES6+)
+CSS
 
-## Expanding the ESLint configuration
+🚀 How It Works
+ 1. Track and Update State with useState
+count is a state variable used to keep track of a number that increases or decreases when you click the Increment (+) or Decrement (-) buttons.
+setcount() updates this number and causes the component to re-render.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ 2. Count Renders with useRef
+total is a ref that stores the number of times the component has rendered.
+Since useRef does not cause re-renders when updated, it’s perfect for tracking values like render count.
+
+✅ 3. Update Render Count on Every Re-render
+useEffect() runs after every render.
+It increases total.current by 1, so the line Rendering times - {total.current} always shows the updated render count.
+
+
+**simple step-by-step explanation **
+STEP 1: Create a new React project using a tool like Vite or Create React App.
+STEP 2: Create a file with a .jsx extension to write your component.
+STEP 3: Write a functional component using React.
+STEP 4: Inside the component, create buttons for incrementing and decrementing a number.
+STEP 5: Use the useState hook to store and update the count value when buttons are clicked.
+STEP 6: Use the useRef hook to store the number of times the component renders without causing a re-render.
+STEP 7: Use the useEffect hook to increase the render count (useRef) every time the component re-renders.
+STEP 8: Display the current count and the number of renderings inside the return JSX.
+STEP 9: Use the onClick event to run logic when buttons are clicked.
+STEP 10: Run the project using the appropriate command npm run dev .
