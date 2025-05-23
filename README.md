@@ -17,15 +17,15 @@ JavaScript (ES6+)
 CSS
 
 🚀 How It Works
- 1. Track and Update State with useState
+✅ Track and Update State with useState
 count is a state variable used to keep track of a number that increases or decreases when you click the Increment (+) or Decrement (-) buttons.
 setcount() updates this number and causes the component to re-render.
 
-✅ 2. Count Renders with useRef
+✅  Count Renders with useRef
 total is a ref that stores the number of times the component has rendered.
 Since useRef does not cause re-renders when updated, it’s perfect for tracking values like render count.
 
-✅ 3. Update Render Count on Every Re-render
+✅  Update Render Count on Every Re-render
 useEffect() runs after every render.
 It increases total.current by 1, so the line Rendering times - {total.current} always shows the updated render count.
 
