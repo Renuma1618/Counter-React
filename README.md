@@ -29,12 +29,21 @@ It increases total.current by 1, so the line Rendering times - {total.current} a
 
 **simple step-by-step explanation **
 STEP 1: Create a new React project using a tool like Vite or Create React App.
+
 STEP 2: Create a file with a .jsx extension to write your component.
+
 STEP 3: Write a functional component using React.
+
 STEP 4: Inside the component, create buttons for incrementing and decrementing a number.
+
 STEP 5: Use the useState hook to store and update the count value when buttons are clicked.
+
 STEP 6: Use the useRef hook to store the number of times the component renders without causing a re-render.
+
 STEP 7: Use the useEffect hook to increase the render count (useRef) every time the component re-renders.
+
 STEP 8: Display the current count and the number of renderings inside the return JSX.
+
 STEP 9: Use the onClick event to run logic when buttons are clicked.
-STEP 10: Run the project using the appropriate command npm run dev .
+
+STEP 10: Run the project using the appropriate command (npm run dev or npm start) to see the output in the browser.
