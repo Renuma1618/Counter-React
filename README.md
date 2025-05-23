@@ -5,8 +5,11 @@ This is a simple React project that demonstrates how component rendering works u
 This app is built to help beginners understand:
 
 How state (useState) updates in React
+
 How to persist values across renders using useRef
+
 How to track the number of times a component renders
+
 
 **🛠️ Tech Stack**
 React (Functional Components)
